@@ -1,0 +1,161 @@
+@Charset "utf-8";
+
+body{
+	margin:0;
+	padding:0;
+}
+
+.app-container{
+	font-family:"Roboto";
+	background-image:linear-gradient(180deg, #ffffff,#cffcf1,#cffcf1);
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:center;
+	min-height:100vh;
+	padding:0;	
+}
+.app-container h1{
+	padding-top:5%;
+	font-size:35px;
+	color:#0f172a;
+}
+
+.digital-timer-container{
+	display: flex;
+	flex-direction:column;
+    justify-content: center;
+    align-items: center;
+	min-width: 90%;
+    min-height: 40vh;
+	/* border: 1px solid orange; */
+}
+.digital-timer-bg{
+	display: flex;
+	flex-direction:column;
+    justify-content: center;
+    align-items: center;
+	min-width: 100%;
+    min-height: 40vh;	
+    background-image: url(digital-timer-elapsed-bg.png);
+	background-size: contain;
+}
+.digital-timer{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    min-width: 25%;
+    padding: 7% 4%;
+    border-radius: 60px;	
+}
+.digital-timer h1{
+	margin:0;
+	color:#00d9f5;
+
+}
+.digital-timer p{
+	margin:0;
+	color:#0f172a;
+	font-weight:600;
+}
+
+
+
+.buttons-timer-container{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+.buttons-container{
+	list-style-type:none;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding: 0;
+}
+.buttons-container li{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	max-width: 40%;	
+}
+.buttons-container li button{
+	border:0;
+	outline:0;
+	background-color:transparent;
+	max-width:40%;
+	min-height:30px;
+	cursor:pointer;
+	/* border:1px solid orange; */
+}
+.buttons-container li button img{
+	max-width:100%;
+}
+.buttons-container li p{
+	font-size:20px;
+	font-weight:500;
+}
+.buttons-timer-container p{
+	font-size:20px;
+	font-weight:500;
+}
+
+
+.timer-container{
+	display:flex;
+	justify-content:center;
+	align-items:center;	
+}
+.timer-text{
+	background-image:linear-gradient(45deg, #cffcf1, #00d9f5);
+	min-width: 100px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8% 5%;
+	margin: 0 10%;
+	border-radius:10px;
+	font-size:30px;
+	font-weight:600;
+}
+.timer-container button{
+	background-color:transparent;
+	outline:0;
+	border:0;
+	font-size:50px;
+	cursor:pointer;
+	
+}
+@media screen and (min-width:768px){
+
+.app-container {
+	background-image: linear-gradient(90deg, #ffffff,#cffcf1,#cffcf1);
+	}
+.digital-timer-container {
+	flex-direction: row;
+	min-width: 100%;
+	}
+.digital-timer-bg {
+	min-width: 30%;
+    min-height: 60vh;
+	background-size: cover;
+}
+.digital-timer {
+	min-width: 30%;
+    padding: 8% 2%;
+    border-radius: 80%;
+	margin-left: 10%;
+}
+.buttons-container li {
+    max-width: 30%;
+}
+
+
+
+
+
+
+}
